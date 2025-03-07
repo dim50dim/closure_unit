@@ -3,8 +3,8 @@
 (function () {
     let w = 75; // тут ваша переменная
     document.querySelector('.b-1').onclick = function () {
-        // увеличиваем на 1
-        // присваиваем .out-1 новую ширину
+         w++;
+         document.querySelector('.out-1').style.width = w + 'px'
     }
 })();
 
