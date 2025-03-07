@@ -130,15 +130,18 @@ document.querySelector('.out-7').append(spanCreator1())
 
 function generateElement2(elem) {
     return function (t) {
+        let element = document.createElement(elem);
+        element.innerHTML = t;
+        return element;
     }
 }
 
-// let divCreator2 = generateElement2('div');
-// let spanCreator2 = generateElement2('span');
-// document.querySelector('.out-8').append(divCreator2('ex1'));
-// document.querySelector('.out-8').append(divCreator2('ex2'));
-// document.querySelector('.out-8').append(spanCreator2('ex3'));
-// document.querySelector('.out-8').append(spanCreator2('ex4'));
+let divCreator2 = generateElement2('div');
+let spanCreator2 = generateElement2('span');
+document.querySelector('.out-8').append(divCreator2('ex1'));
+document.querySelector('.out-8').append(divCreator2('ex2'));
+document.querySelector('.out-8').append(spanCreator2('ex3'));
+document.querySelector('.out-8').append(spanCreator2('ex4'));
 
 // Task 9
 // Напишите функцию замыкание generateDay, внутри которой создан массив days с именами дней недели и return анонимной функции, которая получает аргумент n и возвращает days[n-1] день недели. 
