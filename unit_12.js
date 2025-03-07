@@ -105,9 +105,9 @@ console.log(password2());
 // Task 7
 // Напишите функцию замыкание generateElement, которая принимает 2 аргумента, первый название тега (elem), второй текст в теге (text). Функция generateElement должна возвращать функцию, которая через createElement создает elem и через innerHTML добавляет в него текст. Созданный тег должен быть возвращен. 
 
-// function generateElement(elem, text) {
+function generateElement(elem, text) {
 
-// }
+}
 
 // let divCreator = generateElement('div', 'hello');
 // let spanCreator = generateElement('span', 'hi');
