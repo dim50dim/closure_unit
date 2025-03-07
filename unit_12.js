@@ -24,6 +24,7 @@
         document.querySelector('.b-2-2').addEventListener('click', () => {
             document.querySelector('.out-2').style.height = h + 'px'
         })
+        
 })();
 
 
