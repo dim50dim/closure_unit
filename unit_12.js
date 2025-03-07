@@ -115,10 +115,15 @@ return function() {
 
 let divCreator = generateElement('div', 'hello');
 let spanCreator = generateElement('span', 'hi');
+let divCreator1 = generateElement('div', 'hello boy');
+let spanCreator1 = generateElement('span', 'how is it going');
 document.querySelector('.out-7').append(divCreator());
 document.querySelector('.out-7').append(divCreator());
 document.querySelector('.out-7').append(spanCreator());
 document.querySelector('.out-7').append(spanCreator());
+
+document.querySelector('.out-7').append(divCreator1())
+document.querySelector('.out-7').append(spanCreator1())
 
 // Task 8
 //  Напишите функцию замыкание generateElement2, которая принимает 1 аргумент -  название тега (elem). Функция generateElement2 должна возвращать функцию, которая через createElement создает elem и через innerHTML добавляет в него текст переданный в данную функцию как аргумент text. Созданный тег должен быть возвращен. 
