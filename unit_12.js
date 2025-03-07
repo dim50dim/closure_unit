@@ -20,6 +20,10 @@
         document.querySelector('.b-2-1').addEventListener('click',() => {
             document.querySelector('.out-2').style.width = w + 'px'
         })
+        h+= 5;
+        document.querySelector('.b-2-2').addEventListener('click', () => {
+            document.querySelector('.out-2').style.height = h + 'px'
+        })
 })();
 
 
