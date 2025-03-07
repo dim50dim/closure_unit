@@ -158,7 +158,7 @@ function generateDay() {
     ];
 
     return function (n) {
-    
+        return days[n-1]
     };
 }
 
@@ -187,9 +187,11 @@ function generateMonth() {
         'November',
         'December'
     ];
-
+       return function (n) {
+            return month[n-1]
+       }
 }
-// const month = generateMonth();
-// console.log(generateMonth(2));
-// console.log(generateMonth(3));
+const month = generateMonth();
+console.log(generateMonth(2));
+console.log(generateMonth(3));
 
