@@ -158,13 +158,14 @@ function generateDay() {
     ];
 
     return function (n) {
-        return days[n-1];
+    
     };
 }
 
 const day = generateDay();
 console.log(day(2))
 console.log(day(3))
+console.log(day(7))
 
 
 
