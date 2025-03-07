@@ -4,7 +4,7 @@
     let w = 75; // тут ваша переменная
     document.querySelector('.b-1').onclick = function () {
          w++;
-         document.querySelector('.out-1').style.width = w + 'px'
+         document.querySelector('.out-1').style.width0 = w + 'px'
     }
 })();
 
@@ -14,7 +14,12 @@
 // Усложним предыдущую задачу. Создайте анонимную функцию замыкание, в которой создайте переменные w = 75 и h = 30. Создайте две функции, одна запускается при клике на кнопку .b-2-1 и увеличивает ширину блока .out-2, вторая запускается при клике на кнопку .b-2-2 и увеличивает высоту блока .out-2. Анонимная функция замыкание должна запускаться при загрузке файла.
 
 (function () {
-
+        let w = 77;
+        let h = 30;
+            w+= 2; 
+        document.querySelector('.b-2-1').addEventListener('click',() => {
+            document.querySelector('.out-2').style.width = w + 'px'
+        })
 })();
 
 
