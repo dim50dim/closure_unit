@@ -67,10 +67,14 @@ function generatePassword(arr) {
    function randomInteger(min,max){
        return Math.floor(Math.random() * (max - min + 1) ) + min;
    }
+   return () => {
+    let randomIndex = randomInteger(0,arr.length - 1);
+       return arr[randomIndex];
+   }
 }
 
-// let password = generatePassword(['b', 'y', 'Y', 'b', 'z']);
-// console.log(password());
+let password = generatePassword(['b', 'y', 'Y', 'b', 'z']);
+console.log(password());
 
 
 // Task 6
