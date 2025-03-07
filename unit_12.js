@@ -16,9 +16,10 @@
 (function () {
         let w = 77;
         let h = 30;
-            w+= 2; 
+        
         document.querySelector('.b-2-1').addEventListener('click',() => {
             document.querySelector('.out-2').style.width = w + 'px'
+            w+=5;
         })
   
         document.querySelector('.b-2-2').addEventListener('click', () => {
@@ -33,7 +34,7 @@
 // В скобках напишите код функции замыкания, которая создает переменную count = 0 и возвращает анонимную функцию, которая в свою очередь увеличивает count на 1 и возвращает его. 
 
 // let count3 = (function () {
-// тут ваш код
+
 // })();
 // console.log(count3());
 // console.log(count3());
